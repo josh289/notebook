@@ -143,4 +143,4 @@ demo = gr.Interface(
 )
 
 if __name__ == "__main__":
-    demo.queue(concurrency_count=3).launch(show_api=True)  # Add queue with concurrency of 5 and show API
+    demo.queue(default_concurrency_limit=3).launch(show_api=True)  # Add queue with concurrency of 5 and show API
